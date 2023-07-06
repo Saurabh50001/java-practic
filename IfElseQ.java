@@ -1,4 +1,4 @@
-// Q1. Take values of length and breadth of a rectangle from user and check if it is square or not?
+// // Q1. Take values of length and breadth of a rectangle from user and check if it is square or not?
 
 // import java.util.*;
 // public class IfElseQ{
@@ -20,25 +20,54 @@
 //     }
 // }
 
-// Q2. Take two int values from the user and print greater among them. 
+
+// // Q2. Take two int values from the user and print greater among them. 
+
+// import java.util.*;
+// public class IfElseQ{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+
+//         int a,b;
+//         System.out.print("Enter the first value: ");
+//         a = sc.nextInt();
+
+//         System.out.print("Enter the second value: ");
+//         b = sc.nextInt();
+
+//         if(a>b){
+//             System.out.println("a is greater then b.");
+//         }
+//         else{
+//           System.out.println("b is greater then a.");
+//         }
+//     }
+// }
+
+
+// Q3. A shop will give discount of 10% if the cost of purchased quantity is more then 1000.
+//     Ask user for quantity
+//     Suppose, a unit will cost 100.
+//     judge and print total cost for user.
 
 import java.util.*;
 public class IfElseQ{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
+        int ut, disc,cost;
+        System.out.print("Enter the quantity");
+        ut = sc.nextInt();
+        cost = ut * 100;  // one unit cost will 100.
+        
 
-        int a,b;
-        System.out.print("Enter the first value: ");
-        a = sc.nextInt();
-
-        System.out.print("Enter the second value: ");
-        b = sc.nextInt();
-
-        if(a>b){
-            System.out.println("a is greater then b.");
+        if(cost>1000){
+            disc = cost * 10/100;
+            cost = cost-disc;
+            
+            System.out.println("The total cost for user: " + cost);
         }
         else{
-          System.out.println("b is greater then a.");
+            System.out.println("The total cost for user: " + cost);
         }
     }
 }
