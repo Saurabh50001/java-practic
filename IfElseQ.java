@@ -69,25 +69,66 @@
 //     }
 // }
 
-// Q4. A company decided to give bonus of 5% to employee if his/her year of service is more than 5 year. Ask user for their salary and year of service and print net bonus amount?
+// // Q4. A company decided to give bonus of 5% to employee if his/her year of service is more than 5 year. Ask user for their salary and year of service and print net bonus amount?
+
+// import java.util.*;
+
+// public class IfElseQ {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int sal, yr, bn;
+//         System.out.print("Enter the salary: ");
+//         sal = sc.nextInt();
+//         System.out.print("Enter the year of services: ");
+//         yr = sc.nextInt();
+
+//         if(yr>5){
+//             bn = sal*5/100;
+//             System.out.println("the net bonus amount is : " + bn);
+//         }
+//         else{
+//             System.out.println("No bonus");
+//         }
+//     }
+// }
+
+// Q5. A school has following rules for grading system:
+//     a. Below 25 - F
+//     b. 25 to 45 - E
+//     c. 45 to 50 - D
+//     d. 50 to 60 - C
+//     e. 60 to 80 - B
+//     f. Above 80 - A
+//     Ask user to enter marks and print the corresponding grade.
 
 import java.util.*;
-
-public class IfElseQ {
-    public static void main(String[] args) {
+public class IfElseQ{
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int sal, yr, bn;
-        System.out.print("Enter the salary: ");
-        sal = sc.nextInt();
-        System.out.print("Enter the year of services: ");
-        yr = sc.nextInt();
+        int mark;
+        System.out.print("Enter the marks: ");
+        mark = sc.nextInt();
 
-        if(yr>5){
-            bn = sal*5/100;
-            System.out.println("the net bonus amount is : " + bn);
+        if(mark<25){
+            System.out.println("Grade of user is: F");
+        }
+        else if(mark>=25 && mark<45){
+            System.out.println("Grade of user is: E");
+        }
+        else if(mark>=45 && mark<50){
+            System.out.println("Grade of user is: D");
+        }
+        else if(mark>=50 && mark<60){
+            System.out.println("Grade of user is: C");
+        }
+        else if(mark>=60 && mark<80){
+            System.out.println("Grade of user is: B");
+        }
+        else if(mark>=80 && mark<=100){
+            System.out.println("Grade of user is: A");
         }
         else{
-            System.out.println("No bonus");
+            System.out.println("write correct input");
         }
     }
 }
