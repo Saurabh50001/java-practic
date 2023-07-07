@@ -92,43 +92,70 @@
 //     }
 // }
 
-// Q5. A school has following rules for grading system:
-//     a. Below 25 - F
-//     b. 25 to 45 - E
-//     c. 45 to 50 - D
-//     d. 50 to 60 - C
-//     e. 60 to 80 - B
-//     f. Above 80 - A
-//     Ask user to enter marks and print the corresponding grade.
+// // Q5. A school has following rules for grading system:
+// //     a. Below 25 - F
+// //     b. 25 to 45 - E
+// //     c. 45 to 50 - D
+// //     d. 50 to 60 - C
+// //     e. 60 to 80 - B
+// //     f. Above 80 - A
+// //     Ask user to enter marks and print the corresponding grade.
+
+// import java.util.*;
+// public class IfElseQ{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int mark;
+//         System.out.print("Enter the marks: ");
+//         mark = sc.nextInt();
+
+//         if(mark<25){
+//             System.out.println("Grade of user is: F");
+//         }
+//         else if(mark>=25 && mark<45){
+//             System.out.println("Grade of user is: E");
+//         }
+//         else if(mark>=45 && mark<50){
+//             System.out.println("Grade of user is: D");
+//         }
+//         else if(mark>=50 && mark<60){
+//             System.out.println("Grade of user is: C");
+//         }
+//         else if(mark>=60 && mark<80){
+//             System.out.println("Grade of user is: B");
+//         }
+//         else if(mark>=80 && mark<=100){
+//             System.out.println("Grade of user is: A");
+//         }
+//         else{
+//             System.out.println("write correct input");
+//         }
+//     }
+// }
+
+// Q6. Take input of age of 3 people by user and determine oldest and youngest among them.
 
 import java.util.*;
 public class IfElseQ{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int mark;
-        System.out.print("Enter the marks: ");
-        mark = sc.nextInt();
+        int x,y,z;
+        System.out.println("Enter the age of People: ");
+        x = sc.nextInt();
+        y = sc.nextInt();
+        z = sc.nextInt();
 
-        if(mark<25){
-            System.out.println("Grade of user is: F");
+        if(x>=y && x>=z){
+            System.out.println("X is oldest people");
         }
-        else if(mark>=25 && mark<45){
-            System.out.println("Grade of user is: E");
+        else if(y>=x && y>=z){
+            System.out.println("Y is oldest people");
         }
-        else if(mark>=45 && mark<50){
-            System.out.println("Grade of user is: D");
-        }
-        else if(mark>=50 && mark<60){
-            System.out.println("Grade of user is: C");
-        }
-        else if(mark>=60 && mark<80){
-            System.out.println("Grade of user is: B");
-        }
-        else if(mark>=80 && mark<=100){
-            System.out.println("Grade of user is: A");
+        else if(z>=x && z>=y){
+            System.out.println("Z is oldest people");
         }
         else{
-            System.out.println("write correct input");
+            System.out.println("nothing");
         }
     }
 }
